@@ -1,8 +1,8 @@
 import cv2
 
 # Load the main image and the template image
-img = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Images/image1.jpeg')
-template = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Images/images2.jpeg', 0)
+img = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Akshada_Datta_Mane_AI-Enhanced-Engagement-Tracker-for-Young-Learners-_Infosys_Internship_Oct2024/Image_processing/images/image3.jpeg')
+template = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Akshada_Datta_Mane_AI-Enhanced-Engagement-Tracker-for-Young-Learners-_Infosys_Internship_Oct2024/Image_processing/images/image2.jpeg', 0)
 
 # Check if images were loaded correctly
 if img is None or template is None:
