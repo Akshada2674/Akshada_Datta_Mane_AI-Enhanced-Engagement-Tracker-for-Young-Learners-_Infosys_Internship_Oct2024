@@ -13,8 +13,8 @@ This function resizes two images to a specified pixel range and combines them bo
 
 - **Input:**
 <p>
-  <img src="Image_processing/image.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="Image_processing/image2.jpeg" alt="Image 2" width="25%" height="194px">
+  <img src="Image_processing/images/image.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Image_processing/images/image2.jpeg" alt="Image 2" width="25%" height="194px">
 </p>
 
 
@@ -22,78 +22,78 @@ This function resizes two images to a specified pixel range and combines them bo
 
   ![Concatenated Image](Image_processing/images/image_concatenation_output.png)
 
-#### B) `image_contour`
+#### B) `contour_detection`
 This detects contours in a grayscale image using a binary threshold and `cv2.findContours()`. The contours are drawn onto the original image in green.
 
 - **Input:**
 
-  ![Image 1](Image_processing/image.jpeg)
+  ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
   ![Contoured Image](Image_processing/images/contour_detection_output.png)
 
-#### C) `image_crop`
+#### C) `crop`
 This function extracts a specific region of an image based on pixel range and displays the cropped section.
 
 - **Input:**
  
-    ![Image 1](Image_processing/image.jpeg)
+    ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Cropped Image](Image_processing/images/crop_output.png)
 
-#### D) `image_dilation & erosion`
+#### D) `dil_ero`
 This function applies morphological operations, dilation and erosion, to enhance and reduce features in an image, respectively.
 
 - **Input:**
  
-    ![Image 1](Image_processing/image.jpeg)
+   ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
   ![Dilated and Eroded Image](Image_processing/images/dil_ero_output.png)
 
-#### E) `image_edge_detection`
+#### E) `edge`
 This applies the Canny edge detection algorithm to detect edges in a grayscale image.
 
 - **Input:**
  
-   ![Image 1](Image_processing/image.jpeg)
+    ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Edge Detected Image](Image_processing/images/edge_output.png)
 
-#### F) `image_histogram_equalization`
+#### F) `hist_eq`
 This enhances the contrast of a grayscale image using histogram equalization.
 
 - **Input:**
 
-    ![Image 1](Image_processing/image.jpeg)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Histogram Equalized Image](Image_processing/images/hist_eq_output.png)
 
-#### G) `image_hsv`
+#### G) `color_filtering`
 This converts a color image from the BGR color space to HSV.
 
 - **Input:**
 
-    ![Image 1](Image_processing/image.jpeg)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![HSV Image](Image_processing/images/color_filtering.png)
 
-#### H) `image_morphological_transformation`
+#### H) `morphological_transformation`
 This applies opening and closing morphological operations to a grayscale image to remove noise and fill gaps.
 
 - **Input:**
 
-   ![Image 1](Image_processing/image.jpeg)
+   ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
@@ -104,51 +104,51 @@ This resizes an image to specified dimensions.
 
 - **Input:**
  
-    ![Image 1](Image_processing/image.jpeg)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Resized Image](Image_processing/images/image_resize_output.png)
 
-#### J) `image_rgb2gray`
+#### J) `rgbtogrey`
 This converts a color image to grayscale.
 
 - **Input:**
 
-    ![Image 1](Image_processing/image.jpeg)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Grayscale Image](Image_processing/images/rgbtogrey_output.png)
 
-#### K) `image_rotate`
+#### K) `rotate`
 This rotates an image by 90 degrees around its center.
 
 - **Input:**
 
-    ![Image 1](Image_processing/image.jpeg)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
   ![Rotated Image](Image_processing/images/rotate_output.png)
 
-#### L) `image_blur`
+#### L) `blur_image`
 This applies a Gaussian blur to an image to reduce noise and detail.
 
 - **Input:**
 
-   ![Image 1](Image_processing/image.jpeg)
+  ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
   ![Blurred Image](Image_processing/images/blur_image_output.png)
 
-#### M) `image_template`
+#### M) `template`
 This function performs template matching to locate a template image within a larger image.
 
 <p>
-  <img src="Image_processing/image3.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="Image_processing/image2.jpeg" alt="Image 2" width="25%" height="194px">
+  <img src="Image_processing/images/image3.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Image_processing/images/image2.jpeg" alt="Image 2" width="25%" height="194px">
 </p>
 
 - **Output:**
@@ -162,19 +162,27 @@ This function performs template matching to locate a template image within a lar
 
 ### Developed Logics:
 
-#### A) `Video_multivideo`
-This function reads and displays images from a specified folder, printing the dimensions of each image.
-
-#### B) `Video_fps`
+#### A) `fps`
 This function captures video from the webcam, displays it in real-time, and calculates the FPS.
 
-#### C) `Video_save`
-This function captures live video and saves it to a specified output file.
+- **Input:**
 
-#### D) `Video_stack`
+  ![Video fps](Image_processing/images/image.jpeg)
+
+- **Output:**
+ 
+  ![Blurred Image](Image_processing/images/blur_image_output.png)
+  
+#### B) `Video_concatenation`
 This function reads and resizes two video files, concatenating them horizontally.
 
-#### E) `Video_stream`
+#### C) `read_video`
+This function reads video.
+
+#### D) `read_save_video`
+This function captures live video and saves it to a specified output file.
+
+#### E) `capture_live_video`
 This function captures live video from the webcam and displays it in real-time.
 
 ## Annotations
