@@ -1,4 +1,4 @@
-# Guruteja AI-Enhanced Engagement Tracker for Young Learners (Infosys Internship - October 2024)
+# AKSHADA AI-Enhanced Engagement Tracker for Young Learners (Infosys Internship - October 2024)
 
 ## Image Processing
 
@@ -12,141 +12,148 @@
 This function resizes two images to a specified pixel range and combines them both horizontally and vertically. The results are displayed in separate windows.
 
 - **Input:**
+<p>
+  <img src="Image_processing/images/image.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Image_processing/images/image2.jpeg" alt="Image 2" width="25%" height="194px">
+</p>
 
-  ![Image 1](https://github.com/user-attachments/assets/def5004a-cd57-4a19-9721-ac6e9c2b1f39)
-  
-  ![Image 2](https://github.com/user-attachments/assets/83b09ad4-d964-4f79-8cfd-0e287c180604)
 
 - **Output:**
 
-  ![Concatenated Image](https://github.com/user-attachments/assets/5bfdbc56-7f86-4f11-8af8-a245bb72787a)
+  ![Concatenated Image](Image_processing/images/image_concatenation_output.png)
 
-#### B) `image_contour`
+#### B) `contour_detection`
 This detects contours in a grayscale image using a binary threshold and `cv2.findContours()`. The contours are drawn onto the original image in green.
 
 - **Input:**
 
-  ![Image 1](https://github.com/user-attachments/assets/a9a0bf8b-d49f-4544-83b2-c4928b3cadad)
+  ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
-  ![Contoured Image](https://github.com/user-attachments/assets/f358e843-f3a0-460d-89be-29415a6b6361)
+  ![Contoured Image](Image_processing/images/contour_detection_output.png)
 
-#### C) `image_crop`
+#### C) `crop`
 This function extracts a specific region of an image based on pixel range and displays the cropped section.
 
 - **Input:**
  
-  ![Image 2](https://github.com/user-attachments/assets/73ac45ba-c582-41c4-bc64-bb676fb03ee6)
+    ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Cropped Image](https://github.com/user-attachments/assets/869d7954-38cc-48c4-85d2-eb36f91a6dcc)
+  ![Cropped Image](Image_processing/images/crop_output.png)
 
-#### D) `image_dilation & erosion`
+#### D) `dil_ero`
 This function applies morphological operations, dilation and erosion, to enhance and reduce features in an image, respectively.
 
 - **Input:**
  
-  ![Image 1](https://github.com/user-attachments/assets/56bac27b-1030-4214-bb4b-98410044474f)
+   ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
-  ![Dilated and Eroded Image](https://github.com/user-attachments/assets/7ad6f206-45bd-44c3-934a-f93257777c38)
+  ![Dilated and Eroded Image](Image_processing/images/dil_ero_output.png)
 
-#### E) `image_edge_detection`
+#### E) `edge`
 This applies the Canny edge detection algorithm to detect edges in a grayscale image.
 
 - **Input:**
  
-  ![Image 1](https://github.com/user-attachments/assets/f5396844-9c99-4fa8-8ffd-0b8bcfdbb126)
+    ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Edge Detected Image](https://github.com/user-attachments/assets/979c708c-63e2-4fb2-bec0-24b87a9d8259)
+  ![Edge Detected Image](Image_processing/images/edge_output.png)
 
-#### F) `image_histogram_equalization`
+#### F) `hist_eq`
 This enhances the contrast of a grayscale image using histogram equalization.
 
 - **Input:**
 
-  ![Image 2](https://github.com/user-attachments/assets/8c328a4b-f195-43b7-be73-4dd1163514e2)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Histogram Equalized Image](https://github.com/user-attachments/assets/bc26db27-1cee-4a85-a7d5-8fce5286a190)
+  ![Histogram Equalized Image](Image_processing/images/hist_eq_output.png)
 
-#### G) `image_hsv`
+#### G) `color_filtering`
 This converts a color image from the BGR color space to HSV.
 
 - **Input:**
 
-  ![Image 2](https://github.com/user-attachments/assets/5479802e-f49e-4fa5-b71a-aadcd2e99669)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![HSV Image](https://github.com/user-attachments/assets/8f41752f-f210-4628-b18f-8104f28da96e)
+  ![HSV Image](Image_processing/images/color_filtering.png)
 
-#### H) `image_morphological_transformation`
+#### H) `morphological_transformation`
 This applies opening and closing morphological operations to a grayscale image to remove noise and fill gaps.
 
 - **Input:**
 
-  ![Image 1](https://github.com/user-attachments/assets/fbb6e46f-8dfa-4e38-981e-3c856064fd8f)
+   ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Morphologically Transformed Image](https://github.com/user-attachments/assets/3d8d9970-5f23-4848-afdc-ec744d9339b5)
+  ![Morphologically Transformed Image](Image_processing/images/morphological_transformation_output.png)
 
 #### I) `image_resize`
 This resizes an image to specified dimensions.
 
 - **Input:**
  
-  ![Image 1](https://github.com/user-attachments/assets/701c01c1-17fe-408e-b030-6113d813aa02)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Resized Image](https://github.com/user-attachments/assets/fcb29fb6-e559-4b00-b56e-27c0667ea6dc)
+  ![Resized Image](Image_processing/images/image_resize_output.png)
 
-#### J) `image_rgb2gray`
+#### J) `rgbtogrey`
 This converts a color image to grayscale.
 
 - **Input:**
 
-  ![Image 2](https://github.com/user-attachments/assets/bb3ec4c2-fe8c-43fd-9d54-14ce6f897cef)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Grayscale Image](https://github.com/user-attachments/assets/fcf4a4c2-bda8-48bf-b729-9db743544b74)
+  ![Grayscale Image](Image_processing/images/rgbtogrey_output.png)
 
-#### K) `image_rotate`
+#### K) `rotate`
 This rotates an image by 90 degrees around its center.
 
 - **Input:**
 
-  ![Image 2](https://github.com/user-attachments/assets/ff931e78-37ad-40d6-a0df-67d37aa092af)
+     ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
 
-  ![Rotated Image](https://github.com/user-attachments/assets/35d20bb4-ab51-464d-bd1e-4d295f5c50c0)
+  ![Rotated Image](Image_processing/images/rotate_output.png)
 
-#### L) `image_blur`
+#### L) `blur_image`
 This applies a Gaussian blur to an image to reduce noise and detail.
 
 - **Input:**
 
-  ![Image 1](https://github.com/user-attachments/assets/9052a6fe-fe8e-41f8-a078-6928d5ae0f32)
+  ![Image 1](Image_processing/images/image.jpeg)
 
 - **Output:**
  
-  ![Blurred Image](https://github.com/user-attachments/assets/a0cfade1-69db-48ae-a533-c7512a78e4cc)
+  ![Blurred Image](Image_processing/images/blur_image_output.png)
 
-#### M) `image_noise_removal & closing_gaps`
-This function removes noise and fills gaps using morphological operations.
-
-#### N) `image_template`
+#### M) `template`
 This function performs template matching to locate a template image within a larger image.
+
+<p>
+  <img src="Image_processing/images/image3.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Image_processing/images/image2.jpeg" alt="Image 2" width="25%" height="194px">
+</p>
+
+- **Output:**
+
+![Teplate Image](Image_processing/images/template_output.png)
 
 ## Video Processing
 
@@ -155,19 +162,27 @@ This function performs template matching to locate a template image within a lar
 
 ### Developed Logics:
 
-#### A) `Video_multivideo`
-This function reads and displays images from a specified folder, printing the dimensions of each image.
-
-#### B) `Video_fps`
+#### A) `fps`
 This function captures video from the webcam, displays it in real-time, and calculates the FPS.
 
-#### C) `Video_save`
-This function captures live video and saves it to a specified output file.
+- **Input:**
 
-#### D) `Video_stack`
+  ![Video fps](Image_processing/images/image.jpeg)
+
+- **Output:**
+ 
+  ![Blurred Image](Image_processing/images/blur_image_output.png)
+  
+#### B) `Video_concatenation`
 This function reads and resizes two video files, concatenating them horizontally.
 
-#### E) `Video_stream`
+#### C) `read_video`
+This function reads video.
+
+#### D) `read_save_video`
+This function captures live video and saves it to a specified output file.
+
+#### E) `capture_live_video`
 This function captures live video from the webcam and displays it in real-time.
 
 ## Annotations
