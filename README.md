@@ -290,7 +290,7 @@ This is for face recognition with time-based logging looks well-structured and i
 - **Output:**
 <img src="Image_processing/images/excel_sc_output.png" alt="face" style="width: 300px; height: auto;">
 
-<img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 300px; height: auto;">
+<img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 400px; height: auto;">
 
 
 #### E) `excel_sc_dt`
@@ -309,7 +309,7 @@ Key Features:
 
 - **Output:**
 - <p>
-  <img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 300px; height: auto;">
+  <img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 400px; height: auto;">
 </p>
 
 
@@ -331,7 +331,8 @@ The system continues until you press 'q' to exit.
 - **Output:**
 <p>
   <img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
-<img src="Image_processing/images/attendance_with_attention_landmark.png" alt="face recog" style="width: 300px; height: auto;">
+  <br>
+<img src="Image_processing/images/attendance_with_attention_landmark.png" alt="face recog" style="width: 600px; height: auto;">
 
 </p>
 
@@ -369,8 +370,6 @@ The final output includes an Excel file with logged details and an average atten
 
 - **Output:**
 <img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
-
-<img src="Image_processing/images/attention_with_attendance_avg_score_terminal_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
 <img src="Image_processing/images/attendance_with_avg_score_excel_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
