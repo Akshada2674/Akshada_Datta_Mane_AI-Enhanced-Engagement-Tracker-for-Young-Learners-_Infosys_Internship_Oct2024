@@ -173,13 +173,17 @@ This function reads video.
 This function captures video from the webcam, displays it in real-time, and calculates the FPS.
 
 - **Output:**
-  <img src="Image_processing/images/fps_video_output.png" alt="video" style="width: 300px; height: auto;">
+  <p>
+      <img src="Image_processing/images/fps_video_output.png" alt="video" style="width: 300px; height: auto;">
+  </p>
 
 #### C) `Video_concatenation`
 This function reads and resizes two video files, concatenating them horizontally.
 
 - **Output:**
-   <img src="Image_processing/images/video_concatenation_output.png" alt="video" style="width: 300px; height: auto;">
+  <p>
+       <img src="Image_processing/images/video_concatenation_output.png" alt="video" style="width: 300px; height: auto;">
+  </p>
 
 #### D) `read_save_video`
 This function captures live video and saves it to a specified output file.
@@ -218,14 +222,17 @@ This function updates class numbers in label files for object detection tasks.
 ### Libraries or Frameworks Used:
 - **OpenCV**: Version 4.10.0.84
 - **LabelImg**: Version 1.8.6
-- **dlib**: Version 19.24.6
+- **dlib**: Version 19.24.99
+- **pandas**: Version 2.2.3
+- **numpy** == 1.26.3
 - **face_recognition**: Version 1.3.0
 - **imutils**: Version 0.5.4
+- 
 
 ### Developed Logics:
 
 #### A) `Face_Recog`
-This performs real-time face recognition to identify whether the person in live video frames a known image by comparing. His name is displayed if He/She is recognized; otherwise, "Not He/She" appears.
+This system analyzes live video frames for real-time face recognition, comparing them with known images. If a match is found, the person's name is displayed; if not, "Not that person" appears.
 
 - **Input:**
 
@@ -236,7 +243,7 @@ This performs real-time face recognition to identify whether the person in live 
 <img src="Image_processing/images/attendance_output.png" alt="face recog" style="width: 300px; height: auto;">
 
 #### B) `attendence`
-Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
+The attendance script captures live video frames using OpenCV, detects faces, and compares them with a known image using the face_recognition library. If a match is found, it logs the person's name, date, and time in a DataFrame, which is periodically saved to an Excel file after a set number of recognitions. The process continues until the user presses 'q' to exit the application.
 
 - **Input:**
 
