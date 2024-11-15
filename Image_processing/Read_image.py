@@ -1,7 +1,7 @@
 import cv2
 
 # Read an image
-image = cv2.imread('image.jpeg')
+image = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Akshada_Datta_Mane_AI-Enhanced-Engagement-Tracker-for-Young-Learners-_Infosys_Internship_Oct2024/Image_processing/images/image.jpeg')
 
 # Display the image using OpenCV
 cv2.imshow('Image', image)

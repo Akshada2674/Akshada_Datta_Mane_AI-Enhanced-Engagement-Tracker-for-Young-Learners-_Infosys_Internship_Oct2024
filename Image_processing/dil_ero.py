@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('image.jpeg',0)
+img = cv2.imread('C:/Users/Akshada Mane/OneDrive/Desktop/Infosys Internship/Akshada_Datta_Mane_AI-Enhanced-Engagement-Tracker-for-Young-Learners-_Infosys_Internship_Oct2024/Image_processing/images/image.jpeg',0)
 
 kernel = np.ones((5,5), np.uint8)
 
