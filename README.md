@@ -162,22 +162,26 @@ This function performs template matching to locate a template image within a lar
 
 ### Developed Logics:
 
-#### A) `fps`
-This function captures video from the webcam, displays it in real-time, and calculates the FPS.
-
-- **Input:**
-
-  ![Video fps](Image_processing/images/image.jpeg)
+#### A) `read_video`
+This function reads video.
 
 - **Output:**
  
-  ![Blurred Image](Image_processing/images/blur_image_output.png)
+  ![Video](Image_processing/images/read_video_output.png)
+
+#### B) `fps`
+This function captures video from the webcam, displays it in real-time, and calculates the FPS.
+
+- **Output:**
+ 
+  ![Video FPS](Image_processing/images/fps_video_output.png)
   
-#### B) `Video_concatenation`
+#### C) `Video_concatenation`
 This function reads and resizes two video files, concatenating them horizontally.
 
-#### C) `read_video`
-This function reads video.
+- **Output:**
+ 
+  ![Video Concatenation](Image_processing/images/video_concatenation_output.png)
 
 #### D) `read_save_video`
 This function captures live video and saves it to a specified output file.
@@ -193,38 +197,23 @@ This function captures live video from the webcam and displays it in real-time.
 
 ### Developed Logics:
 
-#### A) `data_segregate`
-This function organizes images and their label files into matched and unmatched directories.
-
-- **Input:**
-
-![Screenshot 2024-11-13 174954](https://github.com/user-attachments/assets/828040b2-4b34-4355-b577-76b9beed0a9c)
-
-- **Output:**
-
-![Screenshot 2024-11-13 174816](https://github.com/user-attachments/assets/b46cc9cd-5c16-4df3-a950-4211bd1087e7)
-
-#### B) `label`
+#### A) `label`
 This function draws bounding boxes on images based on annotations in the label files.
 
 - **Input:**
 
-![gun4](https://github.com/user-attachments/assets/ccba6a57-2506-4524-9c24-f384a5b248fa)
+![gun](Annotations/images/1.jpg)
 
 - **Output:**
 
-![gun4](https://github.com/user-attachments/assets/71dba9a6-37ac-4bcd-aa4f-74e589bcfd09)
+![gun](Annotations/output/1.jpg)
+
+#### B) `data_segregate`
+This function organizes images and their label files into matched and unmatched directories.
+
 
 #### C) `label_manipulate`
 This function updates class numbers in label files for object detection tasks.
-
-- **Input:**
-
-![Screenshot 2024-11-13 174620](https://github.com/user-attachments/assets/20cbc002-8864-42e5-9ad9-f64203421d26)
-
-- **Output:**
-
-![Screenshot 2024-11-13 174644](https://github.com/user-attachments/assets/1e71f3f6-cee9-45e7-bca6-eac2f35e6822)
 
 ## Face Recognition
 
@@ -237,58 +226,45 @@ This function updates class numbers in label files for object detection tasks.
 
 ### Developed Logics:
 
-#### A) `Face_recognition`
+#### A) `Face_Recog`
 This performs real-time face recognition to identify whether the person in live video frames a known image by comparing. His name is displayed if He/She is recognized; otherwise, "Not He/She" appears.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![face recog](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![face](Image_processing/images/attendance_output.png)
 
-#### B) `Attendence_save`
+#### B) `attendence`
 Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![akshada](Image_processing/images/attendance_output.png)
 
-![Screenshot 2024-11-13 180336](https://github.com/user-attachments/assets/e7a4fb5d-3d86-49b2-928e-6b6c65dbf1ba)
+![akshada](Image_processing/images/attendance_output_excel_sheet_attendance.png)
 
 #### C) `test`
 This performs real-time face recognition to identify He/She in a live video feed, logging each recognition event with the date and time into an Excel file every 30 seconds. It tracks recognition intervals to avoid duplicate entries and displays He/She or "Not He/She" based on identification.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![akshada]()
 
-![Screenshot 2024-11-13 181026](https://github.com/user-attachments/assets/95c8a7ee-4008-426b-8869-0a978acda369)
-
-#### D) `tools`
-This performs real-time face recognition using the live camera feed to identify He/She. Each time a face is recognized, it records the name, date, and time in a data frame. Once a recognition count of 5 is reached, it saves the records to an Excel file, then resets the counter and DataFrame. It displays "He/She's name" or "Not He/She's name" over the video feed, and pressing 'q' exits the program with a final save of any remaining records.
-
-- **Input:**
-
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
-
-- **Output:**
-
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
-
-![Screenshot 2024-11-13 181459](https://github.com/user-attachments/assets/dcf0f639-e3a6-43fe-8ef0-e32741429a6c)
+![akshada]()
 
 
-#### E) `excel_sc`
+#### D) `excel_sc`
 This is for face recognition with time-based logging looks well-structured and includes the logic to save screenshots and log attendance into an Excel file.
 
 1. **Efficiency**: Resizing frames to 640x480 is good for speed. You can reduce the size further if needed.
@@ -299,15 +275,15 @@ This is for face recognition with time-based logging looks well-structured and i
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Guru_Teja_2024-11-07_20-39-40](https://github.com/user-attachments/assets/ca7f31a4-4721-4de3-b346-7800de53c1c4)
+![Akshada](Image_processing/images/excel_sc_output.png)
 
-![Screenshot 2024-11-13 183551](https://github.com/user-attachments/assets/846db4c7-d488-4e64-b6be-f5e6aab5209f)
+![Akshada](Image_processing/images/excel_sc_attendance_with_ss_output_excel.png)
 
-#### F) `excel_sc_dt`
+#### E) `excel_sc_dt`
 This uses OpenCV and `face_recognition` to detect and recognize a specific face (His/Her's) from a webcam feed. Upon recognition, a screenshot is saved, and the attendance (name, date, time, screenshot path) is logged into an Excel file. The script processes every second frame, saves data every 30 seconds, and ensures attendance is only logged every 5 minutes for the same person. The attendance data is stored in a DataFrame and periodically exported to an Excel file.
 
 Key Features:
@@ -318,15 +294,15 @@ Key Features:
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Guru_Teja_2024-11-07_20-31-07](https://github.com/user-attachments/assets/967c8d9b-81f1-4ed1-bf0c-de2046ac778b)
+![akshada]()
 
-![Screenshot 2024-11-13 183611](https://github.com/user-attachments/assets/96d0afcd-ad2b-4904-86ad-67d03cdac268)
+![akshada]()
 
-#### G) `landmark`
+#### F) `landmark`
 This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
 
 1. **Face Recognition**: Detects and recognizes "His/Her's face" from the camera using a pre-loaded image.
@@ -338,15 +314,15 @@ The system continues until you press 'q' to exit.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Guru Teja_2024-11-07_20-16-27](https://github.com/user-attachments/assets/20b1feef-0c90-4832-a128-45268391b394)
+![akshada]()
 
-![Screenshot 2024-11-13 181911](https://github.com/user-attachments/assets/5de5e452-ba9d-4062-a23b-a02604d9ff3d)
+![akshada]()
 
-#### H) `atten_score`
+#### G) `atten_score`
 This script captures real-time webcam video to recognize "His/Her's face" and assess attentiveness based on head pose:
 
 1. **Setup**: Loads His/Her's face data and initializes detectors.
@@ -359,31 +335,24 @@ Exits on 'q' press, ensuring the final save to Excel.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Guru Teja_2024-11-07_21-34-50](https://github.com/user-attachments/assets/40f12cd5-c468-459c-a610-395366915ff8)
+![Akshada](Image_processing/images/attend_score_output.png)
 
-![Screenshot 2024-11-13 182336](https://github.com/user-attachments/assets/45034df8-9044-4850-b471-ba579c1a942a)
+![Akshada](Image_processing/images/attend_score_output_excel.png)
 
-#### I) `avg_atten_score`
-This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. Here is a summary of its key actions:
-
-1. **Face Recognition**: Uses `face_recognition` to identify "His/Her's face" by comparing face encodings.
-2. **Head Pose Detection**: Calculates the head pose (yaw, pitch) using `dlib`'s facial landmark predictor to assess attentiveness.
-3. **Attentiveness Calculation**: Computes an attentiveness score based on yaw and pitch, with values between 0 (not attentive) and 1 (fully attentive).
-4. **Logging**: Every 30 seconds, the script saves recognized face data (name, date, time, attentiveness, attention score, and screenshot) into an Excel file.
-5. **Display and Feedback**: Shows real-time video with facial landmarks, attentiveness status, and face bounding boxes.
-
+#### H) `avg_attendance_score`
+This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. 
 The final output includes an Excel file with logged details and an average attentiveness score at the end of the session. The user can stop the video stream by pressing 'q'.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![akshada](Image_processing/images/myphoto.jpg)
 
 - **Output:**
 
-![Guru Teja_2024-11-07_22-10-43](https://github.com/user-attachments/assets/ace6a953-372a-4297-b598-3aa79f8ef4f3)
+![akshada](Image_processing/images/attention_avg_score_output!.png)
 
-![Screenshot 2024-11-13 183057](https://github.com/user-attachments/assets/ad3ba39e-0b64-42f7-836a-2e0f3cacc442)
+![akshada](Image_processing/images/attendance_with_avg_score_excel_output.png)
