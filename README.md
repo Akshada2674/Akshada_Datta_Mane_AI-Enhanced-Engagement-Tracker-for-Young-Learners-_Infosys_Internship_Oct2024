@@ -4,7 +4,7 @@
 
 ### Libraries or Frameworks Used:
 - **OpenCV**: Version 4.10.0.84
-- **NumPy**: For array manipulation
+- **NumPy**: Efficient array operations and computation.
 
 ### Developed Logics:
 
@@ -19,8 +19,9 @@ This function resizes two images to a specified pixel range and combines them bo
 
 
 - **Output:**
-
-  ![Concatenated Image](Image_processing/images/image_concatenation_output.png)
+  <p>
+  <img src="Image_processing/images/image_concatenation_output.png" alt="Image 2" width="500px" height="500px">
+  </p>
 
 #### B) `contour_detection`
 This detects contours in a grayscale image using a binary threshold and `cv2.findContours()`. The contours are drawn onto the original image in green.
@@ -147,7 +148,7 @@ This applies a Gaussian blur to an image to reduce noise and detail.
 This function performs template matching to locate a template image within a larger image.
 
 <p>
-  <img src="Image_processing/images/image3.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Image_processing/images/image1.jpeg" alt="Image 1">&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="Image_processing/images/image2.jpeg" alt="Image 2" width="25%" height="194px">
 </p>
 
@@ -166,22 +167,19 @@ This function performs template matching to locate a template image within a lar
 This function reads video.
 
 - **Output:**
- 
-  ![Video](Image_processing/images/read_video_output.png)
+ <img src="Image_processing/images/read_video_output.png" alt="video" style="width: 300px; height: auto;">
 
 #### B) `fps`
 This function captures video from the webcam, displays it in real-time, and calculates the FPS.
 
 - **Output:**
- 
-  ![Video FPS](Image_processing/images/fps_video_output.png)
-  
+  <img src="Image_processing/images/fps_video_output.png" alt="video" style="width: 300px; height: auto;">
+
 #### C) `Video_concatenation`
 This function reads and resizes two video files, concatenating them horizontally.
 
 - **Output:**
- 
-  ![Video Concatenation](Image_processing/images/video_concatenation_output.png)
+   <img src="Image_processing/images/video_concatenation_output.png" alt="video" style="width: 300px; height: auto;">
 
 #### D) `read_save_video`
 This function captures live video and saves it to a specified output file.
@@ -231,31 +229,33 @@ This performs real-time face recognition to identify whether the person in live 
 
 - **Input:**
 
-![face recog](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
-
-![face](Image_processing/images/attendance_output.png)
+<img src="Image_processing/images/attendance_output.png" alt="face recog" style="width: 300px; height: auto;">
 
 #### B) `attendence`
 Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
+<img src="Image_processing/images/attendance_output.png" alt="face recog" style="width: 300px; height: auto;">
 
-![akshada](Image_processing/images/attendance_output.png)
+<img src="Image_processing/images/attendance_output_excel_sheet_attendance.png" alt="face recog" style="width: 300px; height: auto;">
 
-![akshada](Image_processing/images/attendance_output_excel_sheet_attendance.png)
 
 #### C) `test`
 This performs real-time face recognition to identify He/She in a live video feed, logging each recognition event with the date and time into an Excel file every 30 seconds. It tracks recognition intervals to avoid duplicate entries and displays He/She or "Not He/She" based on identification.
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
 
@@ -275,13 +275,14 @@ This is for face recognition with time-based logging looks well-structured and i
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
+<img src="Image_processing/images/excel_sc_output.png" alt="face" style="width: 300px; height: auto;">
 
-![Akshada](Image_processing/images/excel_sc_output.png)
+<img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 300px; height: auto;">
 
-![Akshada](Image_processing/images/excel_sc_attendance_with_ss_output_excel.png)
 
 #### E) `excel_sc_dt`
 This uses OpenCV and `face_recognition` to detect and recognize a specific face (His/Her's) from a webcam feed. Upon recognition, a screenshot is saved, and the attendance (name, date, time, screenshot path) is logged into an Excel file. The script processes every second frame, saves data every 30 seconds, and ensures attendance is only logged every 5 minutes for the same person. The attendance data is stored in a DataFrame and periodically exported to an Excel file.
@@ -294,7 +295,8 @@ Key Features:
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
 
@@ -314,7 +316,8 @@ The system continues until you press 'q' to exit.
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
 
@@ -335,13 +338,14 @@ Exits on 'q' press, ensuring the final save to Excel.
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
+<img src="Image_processing/images/attend_score_output.png" alt="face recog" style="width: 300px; height: auto;">
 
-![Akshada](Image_processing/images/attend_score_output.png)
+<img src="Image_processing/images/attend_score_output_excel.png" alt="face recog" style="width: 550px; height: 550px;">
 
-![Akshada](Image_processing/images/attend_score_output_excel.png)
 
 #### H) `avg_attendance_score`
 This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. 
@@ -349,10 +353,11 @@ The final output includes an Excel file with logged details and an average atten
 
 - **Input:**
 
-![akshada](Image_processing/images/myphoto.jpg)
+<img src="Image_processing/images/myphoto.jpg" alt="face recog" style="width: 300px; height: auto;">
+
 
 - **Output:**
+<img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
 
-![akshada](Image_processing/images/attention_avg_score_output!.png)
+<img src="Image_processing/images/attendance_with_avg_score_excel_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
-![akshada](Image_processing/images/attendance_with_avg_score_excel_output.png)
