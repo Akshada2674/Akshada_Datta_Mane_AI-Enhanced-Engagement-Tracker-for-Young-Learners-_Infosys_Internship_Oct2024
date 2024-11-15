@@ -265,10 +265,12 @@ This performs real-time face recognition to identify He/She in a live video feed
 
 
 - **Output:**
+- <p>
+  attendance.xlsx
+  <img src="Image_processing/images/test_attendance.png" alt="face recog" style="width: 300px; height: auto;">
 
-![akshada]()
+</p>
 
-![akshada]()
 
 
 #### D) `excel_sc`
@@ -306,10 +308,10 @@ Key Features:
 
 
 - **Output:**
+- <p>
+  <img src="Image_processing/images/excel_sc_attendance_with_ss_output_excel.png" alt="face" style="width: 300px; height: auto;">
+</p>
 
-![akshada]()
-
-![akshada]()
 
 #### F) `landmark`
 This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
@@ -328,7 +330,8 @@ The system continues until you press 'q' to exit.
 
 - **Output:**
 
-![akshada]()
+<img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
+
 
 ![akshada]()
 
@@ -365,6 +368,8 @@ The final output includes an Excel file with logged details and an average atten
 
 - **Output:**
 <img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
+
+<img src="Image_processing/images/attention_with_attendance_avg_score_terminal_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
 <img src="Image_processing/images/attendance_with_avg_score_excel_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
