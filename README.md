@@ -329,11 +329,12 @@ The system continues until you press 'q' to exit.
 
 
 - **Output:**
+<p>
+  <img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
+<img src="Image_processing/images/attendance_with_attention_landmark.png" alt="face recog" style="width: 300px; height: auto;">
 
-<img src="Image_processing/images/attention_avg_score_output!.png" alt="face recog" style="width: 300px; height: auto;">
+</p>
 
-
-![akshada]()
 
 #### G) `atten_score`
 This script captures real-time webcam video to recognize "His/Her's face" and assess attentiveness based on head pose:
