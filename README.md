@@ -373,3 +373,81 @@ The final output includes an Excel file with logged details and an average atten
 
 <img src="Image_processing/images/attendance_with_avg_score_excel_output.png" alt="face recog" style="width: 550px; height: 550px;">
 
+
+<h1>Final Project : AI-Enhanced-Engagement-Tracker-for-Young-Learners</h1>
+
+<p>
+  This project is designed to monitor and analyze user engagement using facial recognition and predictive analytics. The system leverages facial landmark detection and machine learning models to assess engagement levels in real-time.
+</p>
+
+<h2>Project Structure</h2>
+
+<ul>
+  <li>
+    <strong>Folders:</strong>
+    <ul>
+      <li><code>engagement_reports/</code>: Contains the generated engagement analysis reports.</li>
+      <li><code>known_faces/</code>: Stores images of known faces for recognition.</li>
+      <li><code>templates/</code>: HTML templates for the web interface.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Key Files:</strong>
+    <ul>
+      <li><code>app.py</code>: Main Flask application to run the web interface and connect backend functionalities.</li>
+      <li><code>data_processor.py</code>: Handles data preprocessing for the engagement model.</li>
+      <li><code>download_predictor.py</code>: Script to download the required pre-trained predictor models.</li>
+      <li><code>engagement_cnn_model.py</code>: Contains the deep learning model for engagement level prediction.</li>
+      <li><code>engagement_monitor.py</code>: Core module to monitor and analyze engagement in real-time.</li>
+      <li><code>facial_landmark_predictor_model.py</code>: Implements facial landmark detection for accurate feature extraction.</li>
+      <li><code>register_faces.py</code>: Script to register and store known faces for recognition.</li>
+      <li><code>run_engagement_monitor.py</code>: Standalone script to execute the engagement monitoring process.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Features</h2>
+
+<ul>
+  <li><strong>Facial Recognition:</strong> Uses pre-trained models to identify individuals from known faces.</li>
+  <li><strong>Engagement Prediction:</strong> Employs a convolutional neural network (CNN) to predict engagement levels based on facial landmarks.</li>
+  <li><strong>Web Interface:</strong> Built with Flask, the interface provides interactive access to monitor engagement data.</li>
+  <li><strong>Reports:</strong> Automatically generates engagement reports for analysis.</li>
+  <li><strong>Customization:</strong> Users can register their own known faces for personalized monitoring.</li>
+</ul>
+
+
+<h2>Usage</h2>
+
+<h3>Running the Web Application</h3>
+<p>Start the Flask app:</p>
+<pre><code>python app.py</code></pre>
+<p>Access the web interface at <a href="http://localhost:5000" target="_blank">http://localhost:5000</a>.</p>
+
+<h3>Registering Faces</h3>
+<p>To add a new face to the <code>known_faces</code> directory, use:</p>
+<pre><code>python register_faces.py --name &lt;name&gt; --image &lt;image_path&gt;</code></pre>
+
+<h3>Monitoring Engagement</h3>
+<p>Run the standalone script to monitor engagement:</p>
+<pre><code>python run_engagement_monitor.py</code></pre>
+
+<h2>Technologies Used</h2>
+
+<ul>
+  <li><strong>Python:</strong> Core language for backend development.</li>
+  <li><strong>Flask:</strong> Web framework for the user interface.</li>
+  <li><strong>OpenCV:</strong> For image and video processing.</li>
+  <li><strong>Dlib:</strong> For facial landmark detection.</li>
+  <li><strong>TensorFlow/Keras:</strong> For building the CNN model.</li>
+  <li><strong>HTML/CSS:</strong> For web interface design.</li>
+</ul>
+
+<h2>Output Screenshots</h2>
+
+<h3>Web Interface</h3>
+<img src="images/web_interface.png" alt="Web Interface Screenshot" width="600">
+
+<h3>Engagement Monitoring in Action</h3>
+<img src="images/engagement_monitor.png" alt="Real-time Engagement Monitoring" width="600">
+
