@@ -446,8 +446,14 @@ The final output includes an Excel file with logged details and an average atten
 <h2>Output Screenshots</h2>
 
 <h3>Web Interface</h3>
-<img src="images/web_interface.png" alt="Web Interface Screenshot" width="600">
+<p>The web interface is the main entry point for the application, allowing users to monitor engagement, download reports, and visualize data.</p>
+<img src="Image_processing/images/main.png" alt="Web Interface Screenshot" width="600">
 
-<h3>Engagement Monitoring in Action</h3>
-<img src="images/engagement_monitor.png" alt="Real-time Engagement Monitoring" width="600">
+<h3>Downloading Reports</h3>
+<p>Users can download the engagement report after monitoring sessions.</p>
+<img src="Image_processing/images/download.png" alt="Download Button Screenshot" width="600">
 
+<h3>Dashboard Page</h3>
+<p>The dashboard allows users to upload and visualize engagement reports for statistical analysis.</p>
+<img src="Image_processing/images/web_dash.png" alt="Web Dashboard Screenshot" width="600">
+<img src="Image_processing/images/dash.png" alt="Dashboard Visualization Screenshot" width="600">
